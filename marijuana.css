@@ -1,0 +1,122 @@
+/* ===== Marijuana Shell Green Theme ===== */
+
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: radial-gradient(circle at top, #022b12, #000000);
+    color: #00ff66;
+    font-family: 'Share Tech Mono', monospace;
+    margin: 0;
+    padding: 15px;
+    text-shadow: 0 0 6px rgba(0, 255, 102, 0.6);
+}
+
+/* Container / Shell Box */
+.shell {
+    background: rgba(0, 20, 10, 0.9);
+    border: 1px solid #00ff66;
+    box-shadow: 0 0 15px #00ff66;
+    padding: 15px;
+    border-radius: 6px;
+}
+
+/* Header */
+.shell-header {
+    color: #7CFF00;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+/* Command Output */
+.output {
+    background: #000;
+    border: 1px solid #005f2a;
+    padding: 10px;
+    height: 300px;
+    overflow-y: auto;
+    color: #00ff66;
+    box-shadow: inset 0 0 10px #003d1a;
+}
+/* KHUSUS INPUT TEXT – BESAR */
+input[type="text"] {
+    width: 100%;
+    background: #000;
+    border: 2px solid #00ff66;
+    color: #00ff66;
+
+    font-size: 24px;        /* BESAR */
+    padding: 20px;          /* TINGGI */
+    margin: 14px 0;
+
+    font-family: monospace;
+    line-height: 1.6;
+
+    outline: none;
+    box-shadow: 0 0 16px rgba(0,255,102,0.7);
+}
+
+/* MOBILE – LEBIH BESAR LAGI */
+@media (max-width: 768px) {
+    input[type="text"] {
+        font-size: 26px;
+        padding: 22px;
+    }
+}
+
+/* Button */
+button {
+    background: linear-gradient(145deg, #00ff66, #009944);
+    border: none;
+    color: #000;
+    padding: 8px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 4px;
+    box-shadow: 0 0 10px #00ff66;
+}
+
+button:hover {
+    background: #00cc55;
+    box-shadow: 0 0 20px #00ff66;
+}
+
+/* Links */
+a {
+    color: #7CFF00;
+    text-decoration: none;
+}
+
+a:hover {
+    text-shadow: 0 0 10px #7CFF00;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #00ff66;
+    box-shadow: 0 0 10px #00ff66;
+}
+
+/* Blink Cursor Effect */
+.cursor {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}

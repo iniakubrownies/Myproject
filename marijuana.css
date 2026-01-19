@@ -45,14 +45,14 @@ body {
 }
 /* KHUSUS INPUT TEXT – BESAR */
 input[type="text"] {
-    width: 100%;
+    width: 1000%;
     background: #000;
     border: 2px solid #00ff66;
     color: #00ff66;
 
     font-size: 240px;        /* BESAR */
     padding: 200px;          /* TINGGI */
-    margin: 14px 0;
+    margin: 140px 0;
 
     font-family: monospace;
     line-height: 1.6;

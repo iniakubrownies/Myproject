@@ -45,29 +45,31 @@ body {
 }
 /* KHUSUS INPUT TEXT – BESAR */
 input[type="text"] {
-    width: 1000%;
+    width: 100%;
+    height: 80px;              /* TINGGI BOX */
+    
     background: #000;
     border: 2px solid #00ff66;
     color: #00ff66;
 
-    font-size: 240px;        /* BESAR */
-    padding: 200px;          /* TINGGI */
-    margin: 140px 0;
+    font-size: 28px;           /* UKURAN TEXT */
+    padding: 15px 20px;
 
-    font-family: monospace;
-    line-height: 1.6;
+    font-family: 'Share Tech Mono', monospace;
+    line-height: 1.4;
 
     outline: none;
     box-shadow: 0 0 16px rgba(0,255,102,0.7);
 }
-
 /* MOBILE – LEBIH BESAR LAGI */
 @media (max-width: 768px) {
     input[type="text"] {
-        font-size: 26px;
-        padding: 22px;
+        height: 90px;
+        font-size: 24px;
+        padding: 18px;
     }
 }
+
 
 /* Button */
 button {
